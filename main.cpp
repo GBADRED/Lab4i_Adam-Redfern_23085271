@@ -23,6 +23,7 @@ int main()
                 str[0] = '\0';
                 sprintf ( str, "Temperature reading: %.2f\u00B0C\r\n", Tempreading);
                 uartUsb.write( str, strlen(str) );
+                ThisThread::sleep_for(200);
    
     }
 }
